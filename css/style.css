@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script|Lobster+Two|Lato:700i|Montserrat|Raleway');
+
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Oleo Script', cursive;
+font-family: 'Lobster Two', cursive;*/
+
+body, html{
+   height: 100%;
+}
+
+body {
+    padding: 20px;
+    background-color: rgb(122, 196, 214);
+}
+
+header{
+    background-image: url("../images/santorini-header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 30%;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+header h1{
+    text-align: left;
+    align-items: center;
+    font-size: 125px;
+    color: white;
+    font-style: oblique;
+    font-family: 'Oleo Script', cursive;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+    position: relative;
+    margin:35px 0px 50px 0px;
+    top: -5px;
+    overflow: hidden;
+} 
+/*the title started to shift in one display*/
+
+p{
+    font-size: 16px;
+    line-height: 1.6;
+    color:#00008B;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px 30px 0px 30px;
+}
+
+.paralink{
+    color:#00008B;
+}
+/*created this class since p:link and p:visited did not work in changing font color*/
+
+.paralink:visited{
+    color:#00008B;
+}
+
+a:link{
+    color:#00008B;
+}
+
+a:visited{
+    color:#00008B;
+}
+/*added this because the link was automatically changing to a color I never assigned to it. So to "negate" it I had to add the visited property to get the link to stay in the color I wanted. Happened to the rest of my links*/
+
+h2{
+    text-align: center; 
+    color:#00008B;
+    font-family: 'Raleway', sans-serif;
+}
+
+.intro{
+    text-align: center; 
+    color:#00008B;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 20px;
+}
+
+.featuretitle {
+    text-align: center;
+    font-style: oblique;
+    color:#00008B;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+h3{
+    font-style: oblique;
+    color:#00008B;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    padding: 30px 0px 0px 30px;
+}
+
+h4{
+    font-style: oblique;
+    color:#00008B;
+    font-family: 'Lato', sans-serif;
+    padding-left:30px;
+}
+
+h5{
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 5px;
+  padding-top: 30px;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+article{
+    color:#00008B;
+    overflow: hidden;
+}
+
+footer{
+    height: 5%;
+    background-color: rgb(89, 142, 156);
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin: 10px 0px 10px 0px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+nav{
+    background-color: rgb(89, 142, 156);
+    font-size: 125%;    
+    font-style: italic;
+    font-family: 'Raleway', sans-serif;
+    width:15%;
+    margin-top: 20px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+section{
+    width:60%;
+    margin: 0px 10px 0px 20px;
+}
+
+aside{
+    width:25%;
+    margin: 0px 0px 0px 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+figcaption{
+    text-align: center;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+ul{
+    display: flex;
+    flex-direction:column;
+    overflow: hidden;
+}
+
+.flex1{
+    display: flex;
+    flex-direction: row;
+}
+
+/*puts nav, section and aside next to each other in a row*/
+
+.flex2{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+/*places all the tips, links and destination of the day cards on top of each other*/
+
+#navitems{
+    display: flex;
+    flex-direction:column;
+    padding: 30px 30px 30px 20px;
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+}
+
+.navlink:link{
+    color:white;
+    list-style-type: none;
+    text-decoration: none;
+    padding-top:20px;
+}
+
+.navlink:visited{
+    color: white;
+}
+
+.sitelink:link{
+    color:#00008B;
+}
+
+.sitelink:visited{
+    color:#00008B;
+}
+#navitems a:hover{
+    color: rgb(168,168,168)
+}
+
+.sitespage{
+    text-align:center;
+    margin-left: auto;
+    margin-right:auto;
+    width: 50%;
+    font-size: 120%;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 20px 20px 20px;
+    overflow: hidden;
+}
+
+.tips{
+    text-align: justify;
+    padding-right: 8px;
+    overflow: hidden;
+}
+
+.card{
+    background-color: rgb(86,138,150, 0.5);
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+/*for some reason it shows a warning for opacity even though it's correct*/
+    
+.img-card{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+/*on one monitor the image is displayed as stretched out. Need to figure out why. So adjusted the weidth down to 50% instead of 60%. But it affects my photo on my laptop*/
+
+.imgspec {
+    border-radius: 7px;
+    height:300px;
+}
+
+.subhead{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color:#00008B;
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+    font-style: italic;
+    font-stretch: ultra-expanded;
+    font-size:40px;
+    padding: 15px 0px 15px 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.tipspage {
+    font-size: 115%;
+    color:#00008B;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 20px 20px 50px;
+}
+
+.tipspage li{
+    padding-top: 8px;
+}
+
+.sitespage li{
+    padding-top: 10px;
+}
+
+.sites li{
+    padding-top: 3px;
+    padding-bottom: 2px;
+    text-align: inherit;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.card ul{
+    padding-right: 10px;
+}
+
+figure img{
+    border-radius: 7px;
+}
+
+
+.lightbox {
+	display: none;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    height: 100%;
+    max-height: 1200px;
+    width: 100%;
+    max-width: 1200px
+
+}
+/*same issue I had with card images I am having with lightbox image. But only happens in display at class*/
+
+.lightbox:target {
+	outline: none;
+	display: block;
+}
